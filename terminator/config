@@ -1,0 +1,23 @@
+[global_config]
+  inactive_color_offset = 1.0
+[keybindings]
+[profiles]
+  [[default]]
+    icon_bell = False
+    background_darkness = 0.7
+    background_type = transparent
+    cursor_color = "#aaaaaa"
+    font = Terminus Bold 16
+    foreground_color = "#ffffff"
+    show_titlebar = False
+    scrollbar_position = hidden
+    use_system_font = False
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+[plugins]
