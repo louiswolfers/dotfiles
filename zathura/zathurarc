@@ -1,0 +1,13 @@
+# Retarded shit to get the links to work
+set sandbox none
+
+# Transparency and opacity
+set default-bg rgba(0,0,0,0.7)
+set recolor-lightcolor rgba(0,0,0,0)
+
+# zoom and scroll step size
+set zoom-step 20
+set scroll-step 80
+
+# copy selection to system clipboard
+set selection-clipboard clipboard
