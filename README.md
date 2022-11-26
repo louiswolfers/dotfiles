@@ -22,3 +22,17 @@ vim /etc/default/grub # Change GRUB_CMDLINE_LINUX_DEFAULT="resume=UUID=754a5246-
 update-grub
 reboot
 ```
+## natural scrolling / tap to click
+
+@ /usr/share/X11/xorg.conf.d/40-libinput.conf
+
+```
+Section "InputClass"
+        Identifier "libinput touchpad catchall"
+        MatchIsTouchpad "on"
+        MatchDevicePath "/dev/input/event*"
+        Driver "libinput"
+        Option "NaturalScrolling" "True"
+        Option "Tapping" "on"
+EndSection
+```
